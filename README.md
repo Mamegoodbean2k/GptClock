@@ -1,0 +1,2 @@
+由Mamegoodbean2k和ChatGPT合作製作
+Made by Mamegoodbean2k and ChatGPT
