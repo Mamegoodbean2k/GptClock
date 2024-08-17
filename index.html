@@ -167,15 +167,15 @@
             setInterval(function() {
                 if (running[0] == t) {
                     nowtime[0] += 0.01;
-                    $("#p1").text(nowtime[0].toFixed(2) + " 秒");
+                    $("#p1").text(nowtime[0].toFixed(2) + " sec(s)");
                 }
                 if (running[1] == t) {
                     nowtime[1] += 0.01;
-                    $("#p2").text(nowtime[1].toFixed(2) + " 秒");
+                    $("#p2").text(nowtime[1].toFixed(2) + " sec(s)");
                 }
                 if (running[2] == t) {
                     nowtime[2] += 0.01;
-                    $("#p3").text(nowtime[2].toFixed(2) + " 秒");
+                    $("#p3").text(nowtime[2].toFixed(2) + " sec(s)");
                 }
             }, 10);
         });
