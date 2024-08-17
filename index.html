@@ -60,6 +60,15 @@
         .record {
             margin: 5px 0;
         }
+        #language {
+            background-color: #4CAF50;
+            color: white;
+            width:200px;
+            
+        }
+        #lan-bord {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -85,6 +94,9 @@
         <div id="record3" class="record"></div>
     </div>
 
+    <div id="lan-bord"><button id="language">Chinese\English</button></div>
+    
+
     <script>
         // 懶人定義
         var f = false;
@@ -93,6 +105,7 @@
         var running = [f, f, f];
         var nowtime = [0, 0, 0];
         var records = [[], [], []];
+        var eng=f;
 
         $(document).ready(function() {
             // 第一個碼表開始或暫停按鈕
@@ -166,6 +179,23 @@
                 }
             }, 10);
         });
+
+        $("#language").click(changeLang);
+
+        function changeLang() {
+            if (eng==false) {
+                $('.start-stop').text("Start or pause");
+                $('.reset').text("Reset");
+                $("h2").text("Records");
+                eng = true;
+            }
+            else {
+                $('.start-stop').text("開始或暫停");
+                $('.reset').text("重置");
+                $("h2").text("紀錄");
+                eng = false;
+            }
+        }
     </script>
 </body>
 </html>
